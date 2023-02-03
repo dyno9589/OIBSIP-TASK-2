@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNote">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
+        android:id="@+id/toolbar"
+        android:background="@color/black"/>
+
+    <EditText
+        android:id="@+id/notetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:ems="10"
+        android:hint="Note Title"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/notedetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Note Details"
+        android:gravity="left"
+        android:background="@drawable/layout_bg"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notetitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
